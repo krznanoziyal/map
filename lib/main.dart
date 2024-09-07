@@ -5,18 +5,18 @@ import 'page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MapboxOptions.setAccessToken('pk.eyJ1IjoiY3JhdmVuYnVyZyIsImEiOiJja3NyZXFrcnowYW1oMnd1bXFrbGhrNGhiIn0.RcUk1kVGYPEk0RhXUoNsMg');
+  MapboxOptions.setAccessToken('sk.eyJ1IjoiY3JhdmVuYnVyZyIsImEiOiJjbTBzYWg4dmQwZmJ3MmpyNDJsdnM2enQxIn0.eLZKVGxOxeqtEBZv7tANpQ');
   runApp(FullMapPage());
 }
 
 
 
 class FullMapPage extends ExamplePage {
-  FullMapPage() : super(const Icon(Icons.map), 'Full screen map');
+  FullMapPage() : super(const Icon(Icons.map), 'Ful screen map');
 
   @override
   Widget build(BuildContext context) {
-    return const FullMap();
+    return MaterialApp(home:FullMap());
   }
 }
 
